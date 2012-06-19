@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.debug.core.launchConfigurationTypes">
+      <launchConfigurationType
+            delegate="biz.vidal.bigclasspatheclipselauncher.BigClasspathJavaLaunchDelegate"
+            id="com.proxiad.bigclasspatheclipselauncher.bigClasspathLocalJavaApplication"
+            modes="run, debug"
+            name="Big Classpath Java Application">
+      </launchConfigurationType>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTabGroups">
+      <launchConfigurationTabGroup
+            class="org.eclipse.jdt.internal.debug.ui.launcher.LocalJavaApplicationTabGroup"
+            id="com.proxiad.bigclasspatheclipselauncher.launchConfigurationTabGroup.bigClasspathLocalJavaApplication"
+            type="com.proxiad.bigclasspatheclipselauncher.bigClasspathLocalJavaApplication">
+      </launchConfigurationTabGroup>
+   </extension>
+   <extension
+         point="org.eclipse.debug.ui.launchConfigurationTypeImages">
+      <launchConfigurationTypeImage
+            configTypeID="com.proxiad.bigclasspatheclipselauncher.bigClasspathLocalJavaApplication"
+            icon="icons/big.png"
+            id="com.proxiad.bigclasspatheclipselauncher.launchConfigurationTypeImage.bigClasspathLocalJavaApplication">
+      </launchConfigurationTypeImage>
+   </extension>
+
+</plugin>
